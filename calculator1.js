@@ -223,7 +223,7 @@ async function fetchPricesAndShow() {
     prices["manual_rlt"] = { usd: 1.0 };
   }
 if (coins.includes("RST")) {
-    prices["manual_rst"] = { usd: 0.01 };
+    prices["manual_rst"] = { usd: 0.009 };
   }
   // yeni tablo oluştur
   let html = `<h3>USD</h3>
@@ -263,4 +263,5 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("parseBtn").addEventListener("click", parseData);
   document.getElementById("calcBtn").addEventListener("click", calculateRewards);
 });
+
 
